@@ -48,17 +48,27 @@ pip install -r requirements.txt
 ## Usage
 
 1. Create filesystem image using forensic tools (FTK Imager, dd, etc.)
+
 2. Run database identification:
    ```bash
-   python -m src.main identify /path/to/image
+   # Basic usage
+   python main.py identify /path/to/filesystem/image
+   
+   # With verbose output and custom results file
+   python main.py --verbose identify /path/to/filesystem/image --output results/scan_results.json
+   
+   # Windows example with full Python path
+   "C:\path\to\python.exe" main.py --verbose identify "C:\path\to\filesystem\image" --output "output/test_results.json"
    ```
-3. Extract data:
+
+3. Extract data (coming soon):
    ```bash
-   python -m src.main extract /path/to/image
+   python main.py extract /path/to/image
    ```
-4. Analyze and generate profile:
+
+4. Analyze and generate profile (coming soon):
    ```bash
-   python -m src.main analyze /path/to/extracted/data
+   python main.py analyze /path/to/extracted/data
    ```
 
 ## Features
