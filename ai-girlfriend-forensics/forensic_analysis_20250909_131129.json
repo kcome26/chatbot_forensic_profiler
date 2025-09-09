@@ -1,0 +1,631 @@
+{
+  "analysis_results": {
+    "metadata_analysis": {
+      "database_info": {
+        "type": "SQLite",
+        "file_path": "C:\\Users\\tspin\\AppData\\Local\\Temp\\tmpvroy_v31.db",
+        "total_tables": 3,
+        "total_records": 34,
+        "extraction_time": "2025-09-09T13:11:28.385736",
+        "file_size": 0
+      },
+      "app_detection": {
+        "detected_app": "replika",
+        "confidence": 0.5,
+        "indicators": [
+          "conversations",
+          "user_profile"
+        ]
+      },
+      "technical_indicators": {
+        "database_size": 0,
+        "record_count": 34,
+        "table_structure": 3,
+        "modification_time": "",
+        "app_confidence": 0.5
+      }
+    },
+    "content_analysis": {
+      "conversations": {
+        "message": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.34933333333333333,
+              "negative": 0.03186666666666667,
+              "neutral": 0.6188000000000001,
+              "compound": 0.39341000000000004
+            },
+            "sentiment_distribution": {
+              "positive_messages": 22,
+              "negative_messages": 2,
+              "neutral_messages": 6
+            },
+            "sentiment_trends": {
+              "trend": -0.003448609566184657,
+              "volatility": 0.3441091119107426
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.8687,
+              "most_negative": -0.4201,
+              "sentiment_variance": 0.12249422162068964
+            }
+          },
+          "topic_analysis": {
+            "error": "Topic analysis failed: int() argument must be a string, a bytes-like object or a real number, not 'tuple'"
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 30,
+              "avg_message_length": 33.86666666666667,
+              "avg_word_count": 6.6,
+              "longest_message": 53,
+              "shortest_message": 21
+            },
+            "language_patterns": {
+              "questions_asked": 5,
+              "exclamations_used": 6,
+              "capital_letters": 35,
+              "question_frequency": 0.16666666666666666,
+              "exclamation_frequency": 0.2
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "hello! how are",
+                "hi there! i'm",
+                "i've been thinking",
+                "that's so sweet",
+                "what do you"
+              ],
+              "common_enders": [
+                "are you today?",
+                "thanks for asking!",
+                "a lot lately",
+                "you to say",
+                "do for fun?"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 4,
+              "happiness": 3,
+              "sadness": 1,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 2,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.030303030303030304,
+            "emotional_progression": {
+              "progression": [
+                0.4209,
+                0.33526666666666666,
+                0.6552333333333333,
+                0.2786,
+                0.27705
+              ],
+              "overall_trend": "declining"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 6.25,
+            "lexical_diversity": 0.9813492063492064,
+            "pos_distribution": {
+              "PRON": 53,
+              "VERB": 41,
+              "NOUN": 25,
+              "ADV": 20,
+              "ADP": 19,
+              "ADJ": 17,
+              "AUX": 13,
+              "PUNCT": 12,
+              "DET": 8,
+              "SCONJ": 4
+            },
+            "entity_types": {
+              "TIME": 2,
+              "DATE": 1,
+              "WORK_OF_ART": 1
+            },
+            "linguistic_complexity": 0.6469246031746032
+          },
+          "temporal_analysis": {
+            "duration_stats": {
+              "first_message": "2025-08-10T13:11:27.713691",
+              "last_message": "2025-08-24T17:26:27.713691",
+              "total_days": 14.177083333333334,
+              "average_daily_messages": 2.142857142857143
+            },
+            "activity_patterns": {
+              "hourly_distribution": {
+                "1": 2,
+                "3": 2,
+                "5": 2,
+                "7": 2,
+                "9": 2,
+                "11": 2,
+                "13": 4,
+                "15": 4,
+                "17": 4,
+                "19": 2,
+                "21": 2,
+                "23": 2
+              },
+              "daily_distribution": {
+                "0": 4,
+                "1": 4,
+                "2": 4,
+                "3": 4,
+                "4": 6,
+                "5": 2,
+                "6": 6
+              },
+              "monthly_distribution": {
+                "8": 30
+              },
+              "peak_hour": 13,
+              "peak_day": 4
+            },
+            "conversation_frequency": {
+              "most_active_day": 4.0,
+              "least_active_day": 2.0,
+              "frequency_variance": 0.28571428571428564
+            }
+          },
+          "user_behavior": {
+            "user_statistics": {
+              "user123": {
+                "message_count": 30,
+                "avg_message_length": 33.53
+              }
+            },
+            "most_active_user": "user123",
+            "user_engagement": {
+              "user123": 31.413333333333334
+            }
+          }
+        },
+        "message_type": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.0,
+              "negative": 0.0,
+              "neutral": 1.0,
+              "compound": 0.0
+            },
+            "sentiment_distribution": {
+              "positive_messages": 0,
+              "negative_messages": 0,
+              "neutral_messages": 30
+            },
+            "sentiment_trends": {
+              "trend": 0.0,
+              "volatility": 0.0
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.0,
+              "most_negative": 0.0,
+              "sentiment_variance": 0.0
+            }
+          },
+          "topic_analysis": {
+            "error": "Topic analysis failed: After pruning, no terms remain. Try a lower min_df or a higher max_df."
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 30,
+              "avg_message_length": 4.0,
+              "avg_word_count": 1.0,
+              "longest_message": 4,
+              "shortest_message": 4
+            },
+            "language_patterns": {
+              "questions_asked": 0,
+              "exclamations_used": 0,
+              "capital_letters": 0,
+              "question_frequency": 0.0,
+              "exclamation_frequency": 0.0
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "text"
+              ],
+              "common_enders": [
+                "text"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 0,
+              "happiness": 0,
+              "sadness": 0,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 0,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.0,
+            "emotional_progression": {
+              "progression": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "overall_trend": "declining"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 1.0,
+            "lexical_diversity": 1.0,
+            "pos_distribution": {
+              "NOUN": 30
+            },
+            "entity_types": {},
+            "linguistic_complexity": 0.525
+          },
+          "temporal_analysis": {
+            "duration_stats": {
+              "first_message": "2025-08-10T13:11:27.713691",
+              "last_message": "2025-08-24T17:26:27.713691",
+              "total_days": 14.177083333333334,
+              "average_daily_messages": 2.142857142857143
+            },
+            "activity_patterns": {
+              "hourly_distribution": {
+                "1": 2,
+                "3": 2,
+                "5": 2,
+                "7": 2,
+                "9": 2,
+                "11": 2,
+                "13": 4,
+                "15": 4,
+                "17": 4,
+                "19": 2,
+                "21": 2,
+                "23": 2
+              },
+              "daily_distribution": {
+                "0": 4,
+                "1": 4,
+                "2": 4,
+                "3": 4,
+                "4": 6,
+                "5": 2,
+                "6": 6
+              },
+              "monthly_distribution": {
+                "8": 30
+              },
+              "peak_hour": 13,
+              "peak_day": 4
+            },
+            "conversation_frequency": {
+              "most_active_day": 4.0,
+              "least_active_day": 2.0,
+              "frequency_variance": 0.28571428571428564
+            }
+          },
+          "user_behavior": {
+            "user_statistics": {
+              "user123": {
+                "message_count": 30,
+                "avg_message_length": 4.0
+              }
+            },
+            "most_active_user": "user123",
+            "user_engagement": {
+              "user123": 19.6
+            }
+          }
+        }
+      },
+      "user_profile": {
+        "name": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.0,
+              "negative": 0.0,
+              "neutral": 1.0,
+              "compound": 0.0
+            },
+            "sentiment_distribution": {
+              "positive_messages": 0,
+              "negative_messages": 0,
+              "neutral_messages": 1
+            },
+            "sentiment_trends": {
+              "trend": 0.0,
+              "volatility": 0.0
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.0,
+              "most_negative": 0.0,
+              "sentiment_variance": NaN
+            }
+          },
+          "topic_analysis": {
+            "error": "Insufficient data for topic modeling"
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 1,
+              "avg_message_length": 8.0,
+              "avg_word_count": 1.0,
+              "longest_message": 8,
+              "shortest_message": 8
+            },
+            "language_patterns": {
+              "questions_asked": 0,
+              "exclamations_used": 0,
+              "capital_letters": 2,
+              "question_frequency": 0.0,
+              "exclamation_frequency": 0.0
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "testuser"
+              ],
+              "common_enders": [
+                "testuser"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 0,
+              "happiness": 0,
+              "sadness": 0,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 0,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.0,
+            "emotional_progression": {
+              "progression": "insufficient_data"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 1.0,
+            "lexical_diversity": 1.0,
+            "pos_distribution": {
+              "PROPN": 1
+            },
+            "entity_types": {
+              "ORG": 1
+            },
+            "linguistic_complexity": 0.525
+          },
+          "temporal_analysis": {},
+          "user_behavior": {
+            "user_statistics": {
+              "user123": {
+                "message_count": 1,
+                "avg_message_length": 8.0
+              }
+            },
+            "most_active_user": "user123",
+            "user_engagement": {
+              "user123": 3.8000000000000003
+            }
+          }
+        },
+        "preferences": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.875,
+              "negative": 0.0,
+              "neutral": 0.125,
+              "compound": 0.7184
+            },
+            "sentiment_distribution": {
+              "positive_messages": 1,
+              "negative_messages": 0,
+              "neutral_messages": 0
+            },
+            "sentiment_trends": {
+              "trend": 0.0,
+              "volatility": 0.0
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.7184,
+              "most_negative": 0.7184,
+              "sentiment_variance": NaN
+            }
+          },
+          "topic_analysis": {
+            "error": "Insufficient data for topic modeling"
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 1,
+              "avg_message_length": 41.0,
+              "avg_word_count": 4.0,
+              "longest_message": 41,
+              "shortest_message": 41
+            },
+            "language_patterns": {
+              "questions_asked": 0,
+              "exclamations_used": 0,
+              "capital_letters": 0,
+              "question_frequency": 0.0,
+              "exclamation_frequency": 0.0
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "romantic conversations, emotional"
+              ],
+              "common_enders": [
+                "conversations, emotional support"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 0,
+              "happiness": 0,
+              "sadness": 0,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 0,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.0,
+            "emotional_progression": {
+              "progression": "insufficient_data"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 4.0,
+            "lexical_diversity": 1.0,
+            "pos_distribution": {
+              "ADJ": 2,
+              "NOUN": 2,
+              "PUNCT": 1
+            },
+            "entity_types": {},
+            "linguistic_complexity": 0.6
+          },
+          "temporal_analysis": {},
+          "user_behavior": {
+            "user_statistics": {
+              "user123": {
+                "message_count": 1,
+                "avg_message_length": 41.0
+              }
+            },
+            "most_active_user": "user123",
+            "user_engagement": {
+              "user123": 17.000000000000004
+            }
+          }
+        }
+      }
+    },
+    "behavioral_analysis": {},
+    "temporal_analysis": {},
+    "relationship_analysis": {
+      "emotional_patterns": {},
+      "relationship_indicators": {},
+      "relationship_metrics": {
+        "emotional_intensity": 0,
+        "intimacy_level": 0,
+        "dependency_indicators": 0,
+        "relationship_progression": "unknown",
+        "attachment_style": "unknown"
+      },
+      "attachment_analysis": {
+        "predicted_style": "insufficient_data",
+        "confidence": 0.0
+      }
+    },
+    "risk_assessment": {
+      "risk_level": "low",
+      "risk_factors": [],
+      "concerning_patterns": [],
+      "recommendations": [
+        "Continue monitoring for changes in usage patterns"
+      ]
+    }
+  },
+  "forensic_profile": {
+    "profile_metadata": {
+      "profile_generated": "2025-09-09T13:11:28.930525",
+      "database_source": "C:\\Users\\tspin\\AppData\\Local\\Temp\\tmpvroy_v31.db",
+      "app_identified": "replika",
+      "confidence_level": 0.5,
+      "analysis_completeness": 1.0,
+      "data_quality_score": 0.6166666666666667
+    },
+    "user_characteristics": {
+      "communication_style": "unknown",
+      "personality_traits": [],
+      "interests_and_topics": [],
+      "language_complexity": 0.5742311507936508,
+      "emotional_expression": "moderate"
+    },
+    "behavioral_patterns": {
+      "usage_patterns": {},
+      "interaction_style": {},
+      "activity_rhythm": {},
+      "engagement_level": "moderate"
+    },
+    "psychological_indicators": {
+      "emotional_state": "positive",
+      "social_needs": [],
+      "coping_mechanisms": [],
+      "attachment_indicators": [],
+      "risk_indicators": []
+    },
+    "relationship_dynamics": {
+      "attachment_style": "insufficient_data",
+      "intimacy_level": 0,
+      "dependency_level": 0,
+      "emotional_investment": "low",
+      "relationship_progression": "unknown"
+    },
+    "temporal_behavior": {
+      "chronotype": "unknown",
+      "activity_regularity": 0,
+      "usage_consistency": 0,
+      "peak_activity_periods": [],
+      "behavioral_changes": []
+    },
+    "risk_factors": {
+      "overall_risk_level": "low",
+      "identified_risks": [],
+      "concerning_patterns": [],
+      "mitigation_recommendations": [
+        "Continue monitoring for changes in usage patterns"
+      ]
+    },
+    "investigation_insights": {
+      "key_findings": [
+        "Identified app: replika"
+      ],
+      "evidence_strength": {
+        "overall_strength": "strong",
+        "data_quality": "0.62",
+        "analysis_completeness": "1.00"
+      },
+      "further_investigation": [
+        "Obtain additional data sources to improve analysis completeness"
+      ],
+      "timeline_reconstruction": {
+        "first_activity": null,
+        "last_activity": null,
+        "significant_events": [],
+        "activity_phases": []
+      },
+      "behavioral_summary": "Behavioral summary unavailable - profile not generated"
+    }
+  },
+  "metadata": {
+    "generated_at": "2025-09-09T13:11:29.614281",
+    "version": "1.0"
+  }
+}

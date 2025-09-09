@@ -1,0 +1,2006 @@
+{
+  "analysis_results": {
+    "metadata_analysis": {
+      "database_info": {
+        "type": "SQLite",
+        "file_path": "C:\\Users\\tspin\\AppData\\Local\\Temp\\tmpseikjimh.db",
+        "total_tables": 5,
+        "total_records": 45,
+        "extraction_time": "2025-09-09T13:11:01.479178",
+        "file_size": 0
+      },
+      "app_detection": {
+        "detected_app": "unknown",
+        "confidence": 0.0,
+        "indicators": [
+          "user_profile"
+        ]
+      },
+      "technical_indicators": {
+        "database_size": 0,
+        "record_count": 45,
+        "table_structure": 5,
+        "modification_time": "",
+        "app_confidence": 0.0
+      }
+    },
+    "content_analysis": {
+      "messages": {
+        "content": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.20066666666666666,
+              "negative": 0.06858333333333333,
+              "neutral": 0.7307500000000001,
+              "compound": 0.2648125
+            },
+            "sentiment_distribution": {
+              "positive_messages": 12,
+              "negative_messages": 6,
+              "neutral_messages": 6
+            },
+            "sentiment_trends": {
+              "trend": 0.001254130434782606,
+              "volatility": 0.45174286040521255
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.9109,
+              "most_negative": -0.4576,
+              "sentiment_variance": 0.21294429070652174
+            }
+          },
+          "topic_analysis": {
+            "error": "Topic analysis failed: int() argument must be a string, a bytes-like object or a real number, not 'tuple'"
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 24,
+              "avg_message_length": 75.04166666666667,
+              "avg_word_count": 13.958333333333334,
+              "longest_message": 141,
+              "shortest_message": 29
+            },
+            "language_patterns": {
+              "questions_asked": 8,
+              "exclamations_used": 7,
+              "capital_letters": 56,
+              "question_frequency": 0.3333333333333333,
+              "exclamation_frequency": 0.2916666666666667
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "hi there! i'm",
+                "hello! welcome! i'm",
+                "just feeling a",
+                "i understand that",
+                "good morning! how"
+              ],
+              "common_enders": [
+                "to this app",
+                "you here today?",
+                "bit lonely lately",
+                "to talk to.",
+                "did you sleep?"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 2,
+              "happiness": 3,
+              "sadness": 1,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 2,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.020895522388059702,
+            "emotional_progression": {
+              "progression": [
+                0.002349999999999991,
+                0.568825,
+                -0.02665000000000002,
+                0.5940749999999999,
+                0.384925,
+                0.06535
+              ],
+              "overall_trend": "improving"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 7.173611111111111,
+            "lexical_diversity": 0.9447984375451902,
+            "pos_distribution": {
+              "PRON": 81,
+              "VERB": 64,
+              "PUNCT": 43,
+              "ADV": 37,
+              "NOUN": 35,
+              "ADP": 34,
+              "ADJ": 28,
+              "AUX": 25,
+              "DET": 15,
+              "PART": 10
+            },
+            "entity_types": {
+              "DATE": 3,
+              "GPE": 3,
+              "ORDINAL": 1
+            },
+            "linguistic_complexity": 0.6517394965503729
+          },
+          "temporal_analysis": {
+            "duration_stats": {
+              "first_message": "2025-06-12T07:11:00.823161",
+              "last_message": "2025-06-17T12:56:00.823161",
+              "total_days": 5.239583333333333,
+              "average_daily_messages": 4.0
+            },
+            "activity_patterns": {
+              "hourly_distribution": {
+                "7": 4,
+                "8": 4,
+                "9": 4,
+                "10": 4,
+                "11": 4,
+                "12": 4
+              },
+              "daily_distribution": {
+                "0": 4,
+                "1": 4,
+                "3": 4,
+                "4": 4,
+                "5": 4,
+                "6": 4
+              },
+              "monthly_distribution": {
+                "6": 24
+              },
+              "peak_hour": 7,
+              "peak_day": 0
+            },
+            "conversation_frequency": {
+              "most_active_day": 4.0,
+              "least_active_day": 4.0,
+              "frequency_variance": 0.0
+            }
+          },
+          "user_behavior": {
+            "user_statistics": {
+              "user_12345": {
+                "message_count": 24,
+                "avg_message_length": 74.42
+              }
+            },
+            "most_active_user": "user_12345",
+            "user_engagement": {
+              "user_12345": 44.16666666666667
+            }
+          }
+        },
+        "message_type": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.0,
+              "negative": 0.0,
+              "neutral": 1.0,
+              "compound": 0.0
+            },
+            "sentiment_distribution": {
+              "positive_messages": 0,
+              "negative_messages": 0,
+              "neutral_messages": 24
+            },
+            "sentiment_trends": {
+              "trend": 0.0,
+              "volatility": 0.0
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.0,
+              "most_negative": 0.0,
+              "sentiment_variance": 0.0
+            }
+          },
+          "topic_analysis": {
+            "error": "Topic analysis failed: After pruning, no terms remain. Try a lower min_df or a higher max_df."
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 24,
+              "avg_message_length": 4.0,
+              "avg_word_count": 1.0,
+              "longest_message": 4,
+              "shortest_message": 4
+            },
+            "language_patterns": {
+              "questions_asked": 0,
+              "exclamations_used": 0,
+              "capital_letters": 0,
+              "question_frequency": 0.0,
+              "exclamation_frequency": 0.0
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "text"
+              ],
+              "common_enders": [
+                "text"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 0,
+              "happiness": 0,
+              "sadness": 0,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 0,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.0,
+            "emotional_progression": {
+              "progression": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "overall_trend": "declining"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 1.0,
+            "lexical_diversity": 1.0,
+            "pos_distribution": {
+              "NOUN": 24
+            },
+            "entity_types": {},
+            "linguistic_complexity": 0.525
+          },
+          "temporal_analysis": {
+            "duration_stats": {
+              "first_message": "2025-06-12T07:11:00.823161",
+              "last_message": "2025-06-17T12:56:00.823161",
+              "total_days": 5.239583333333333,
+              "average_daily_messages": 4.0
+            },
+            "activity_patterns": {
+              "hourly_distribution": {
+                "7": 4,
+                "8": 4,
+                "9": 4,
+                "10": 4,
+                "11": 4,
+                "12": 4
+              },
+              "daily_distribution": {
+                "0": 4,
+                "1": 4,
+                "3": 4,
+                "4": 4,
+                "5": 4,
+                "6": 4
+              },
+              "monthly_distribution": {
+                "6": 24
+              },
+              "peak_hour": 7,
+              "peak_day": 0
+            },
+            "conversation_frequency": {
+              "most_active_day": 4.0,
+              "least_active_day": 4.0,
+              "frequency_variance": 0.0
+            }
+          },
+          "user_behavior": {
+            "user_statistics": {
+              "user_12345": {
+                "message_count": 24,
+                "avg_message_length": 4.0
+              }
+            },
+            "most_active_user": "user_12345",
+            "user_engagement": {
+              "user_12345": 15.999999999999998
+            }
+          }
+        }
+      },
+      "sqlite_sequence": {
+        "name": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.0,
+              "negative": 0.0,
+              "neutral": 1.0,
+              "compound": 0.0
+            },
+            "sentiment_distribution": {
+              "positive_messages": 0,
+              "negative_messages": 0,
+              "neutral_messages": 2
+            },
+            "sentiment_trends": {
+              "trend": 0.0,
+              "volatility": 0.0
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.0,
+              "most_negative": 0.0,
+              "sentiment_variance": 0.0
+            }
+          },
+          "topic_analysis": {
+            "error": "Insufficient data for topic modeling"
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 2,
+              "avg_message_length": 10.5,
+              "avg_word_count": 1.0,
+              "longest_message": 13,
+              "shortest_message": 8
+            },
+            "language_patterns": {
+              "questions_asked": 0,
+              "exclamations_used": 0,
+              "capital_letters": 0,
+              "question_frequency": 0.0,
+              "exclamation_frequency": 0.0
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "messages",
+                "user_sessions"
+              ],
+              "common_enders": [
+                "messages",
+                "user_sessions"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 0,
+              "happiness": 0,
+              "sadness": 0,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 0,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.0,
+            "emotional_progression": {
+              "progression": "insufficient_data"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 1.0,
+            "lexical_diversity": 1.0,
+            "pos_distribution": {
+              "NOUN": 2
+            },
+            "entity_types": {},
+            "linguistic_complexity": 0.525
+          },
+          "temporal_analysis": {},
+          "user_behavior": {}
+        }
+      },
+      "user_profile": {
+        "display_name": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.0,
+              "negative": 0.0,
+              "neutral": 1.0,
+              "compound": 0.0
+            },
+            "sentiment_distribution": {
+              "positive_messages": 0,
+              "negative_messages": 0,
+              "neutral_messages": 1
+            },
+            "sentiment_trends": {
+              "trend": 0.0,
+              "volatility": 0.0
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.0,
+              "most_negative": 0.0,
+              "sentiment_variance": NaN
+            }
+          },
+          "topic_analysis": {
+            "error": "Insufficient data for topic modeling"
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 1,
+              "avg_message_length": 4.0,
+              "avg_word_count": 1.0,
+              "longest_message": 4,
+              "shortest_message": 4
+            },
+            "language_patterns": {
+              "questions_asked": 0,
+              "exclamations_used": 0,
+              "capital_letters": 1,
+              "question_frequency": 0.0,
+              "exclamation_frequency": 0.0
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "alex"
+              ],
+              "common_enders": [
+                "alex"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 0,
+              "happiness": 0,
+              "sadness": 0,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 0,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.0,
+            "emotional_progression": {
+              "progression": "insufficient_data"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 1.0,
+            "lexical_diversity": 1.0,
+            "pos_distribution": {
+              "PROPN": 1
+            },
+            "entity_types": {
+              "PERSON": 1
+            },
+            "linguistic_complexity": 0.525
+          },
+          "temporal_analysis": {},
+          "user_behavior": {
+            "user_statistics": {
+              "user_12345": {
+                "message_count": 1,
+                "avg_message_length": 4.0
+              }
+            },
+            "most_active_user": "user_12345",
+            "user_engagement": {
+              "user_12345": 2.2
+            }
+          }
+        },
+        "preferences": {
+          "sentiment_analysis": {
+            "overall_sentiment": {
+              "positive": 0.7,
+              "negative": 0.0,
+              "neutral": 0.3,
+              "compound": 0.7184
+            },
+            "sentiment_distribution": {
+              "positive_messages": 1,
+              "negative_messages": 0,
+              "neutral_messages": 0
+            },
+            "sentiment_trends": {
+              "trend": 0.0,
+              "volatility": 0.0
+            },
+            "extreme_sentiments": {
+              "most_positive": 0.7184,
+              "most_negative": 0.7184,
+              "sentiment_variance": NaN
+            }
+          },
+          "topic_analysis": {
+            "error": "Insufficient data for topic modeling"
+          },
+          "conversation_patterns": {
+            "message_statistics": {
+              "total_messages": 1,
+              "avg_message_length": 58.0,
+              "avg_word_count": 6.0,
+              "longest_message": 58,
+              "shortest_message": 58
+            },
+            "language_patterns": {
+              "questions_asked": 0,
+              "exclamations_used": 0,
+              "capital_letters": 0,
+              "question_frequency": 0.0,
+              "exclamation_frequency": 0.0
+            },
+            "conversation_flow": {
+              "common_starters": [
+                "emotional support, romantic"
+              ],
+              "common_enders": [
+                "conversations, daily check-ins"
+              ]
+            }
+          },
+          "emotional_patterns": {
+            "emotional_expressions": {
+              "love": 0,
+              "happiness": 0,
+              "sadness": 0,
+              "anger": 0,
+              "fear": 0,
+              "surprise": 0
+            },
+            "relationship_indicators": {
+              "intimacy": 0,
+              "commitment": 0,
+              "affection": 0,
+              "future_planning": 0
+            },
+            "emotional_intensity": 0.0,
+            "emotional_progression": {
+              "progression": "insufficient_data"
+            }
+          },
+          "linguistic_analysis": {
+            "average_sentence_length": 6.0,
+            "lexical_diversity": 1.0,
+            "pos_distribution": {
+              "NOUN": 4,
+              "ADJ": 3,
+              "PUNCT": 3
+            },
+            "entity_types": {
+              "DATE": 1
+            },
+            "linguistic_complexity": 0.65
+          },
+          "temporal_analysis": {},
+          "user_behavior": {
+            "user_statistics": {
+              "user_12345": {
+                "message_count": 1,
+                "avg_message_length": 58.0
+              }
+            },
+            "most_active_user": "user_12345",
+            "user_engagement": {
+              "user_12345": 23.800000000000004
+            }
+          }
+        }
+      }
+    },
+    "behavioral_analysis": {},
+    "temporal_analysis": {
+      "messages_id": {
+        "activity_patterns": {
+          "hourly_distribution": {
+            "0": 24
+          },
+          "daily_distribution": {
+            "3": 24
+          },
+          "monthly_distribution": {
+            "1": 24
+          },
+          "peak_activity_hour": 0,
+          "peak_activity_day": 3,
+          "time_period_breakdown": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 24,
+              "percentage": 100.0
+            }
+          },
+          "activity_regularity": {
+            "hourly_regularity": 0.0,
+            "daily_regularity": 0.0,
+            "overall_regularity": 0.0
+          }
+        },
+        "usage_intensity": {
+          "daily_stats": {
+            "average_daily_messages": 24.0,
+            "max_daily_messages": 24,
+            "min_daily_messages": 24,
+            "daily_variance": NaN,
+            "active_days": 1
+          },
+          "weekly_stats": {
+            "average_weekly_messages": 24.0,
+            "max_weekly_messages": 24,
+            "weekly_variance": NaN
+          },
+          "activity_distribution": {
+            "low_activity_days": 1,
+            "medium_activity_days": 0,
+            "high_activity_days": 0
+          },
+          "usage_streaks": {
+            "longest_streak": 1,
+            "average_streak": 1,
+            "total_streaks": 1
+          },
+          "usage_consistency": 0.0
+        },
+        "behavioral_changes": {
+          "insufficient_data": true
+        },
+        "session_analysis": {
+          "session_overview": {
+            "total_sessions": 1,
+            "avg_session_duration_minutes": 3.8333333333333335e-10,
+            "avg_messages_per_session": 24.0,
+            "longest_session_minutes": 3.8333333333333335e-10,
+            "shortest_session_minutes": 3.8333333333333335e-10
+          },
+          "session_timing": {
+            "preferred_session_hours": {
+              "0": 1
+            },
+            "preferred_session_days": {
+              "3": 1
+            }
+          },
+          "session_intensity": {
+            "short_sessions": 1,
+            "medium_sessions": 0,
+            "long_sessions": 1
+          }
+        },
+        "circadian_patterns": {
+          "circadian_distribution": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 24,
+              "percentage": 100.0
+            }
+          },
+          "chronotype": "night_owl",
+          "peak_activity_period": "night",
+          "circadian_regularity": 1.0
+        },
+        "weekly_patterns": {
+          "daily_distribution": {
+            "monday": 0,
+            "tuesday": 0,
+            "wednesday": 0,
+            "thursday": 24,
+            "friday": 0,
+            "saturday": 0,
+            "sunday": 0
+          },
+          "weekday_vs_weekend": {
+            "weekday_percentage": 100.0,
+            "weekend_percentage": 0.0,
+            "weekend_preference": false
+          },
+          "most_active_day": "Thursday",
+          "weekly_consistency": 0.0
+        },
+        "seasonal_patterns": {
+          "monthly_distribution": {
+            "1": 24
+          },
+          "seasonal_distribution": {
+            "winter": 24
+          },
+          "peak_season": "winter",
+          "seasonal_variance": NaN,
+          "usage_seasonality": 0.0
+        },
+        "engagement_evolution": {
+          "weekly_engagement": {
+            "1": {
+              "message_length": 29.0,
+              "message_count": 24
+            }
+          },
+          "engagement_trends": {
+            "message_frequency_trend": 0.0,
+            "message_length_trend": 0.0,
+            "overall_engagement_direction": "decreasing"
+          },
+          "engagement_phases": []
+        }
+      },
+      "messages_timestamp": {
+        "activity_patterns": {
+          "hourly_distribution": {
+            "7": 4,
+            "8": 4,
+            "9": 4,
+            "10": 4,
+            "11": 4,
+            "12": 4
+          },
+          "daily_distribution": {
+            "0": 4,
+            "1": 4,
+            "3": 4,
+            "4": 4,
+            "5": 4,
+            "6": 4
+          },
+          "monthly_distribution": {
+            "6": 24
+          },
+          "peak_activity_hour": 7,
+          "peak_activity_day": 0,
+          "time_period_breakdown": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 24,
+              "percentage": 100.0
+            }
+          },
+          "activity_regularity": {
+            "hourly_regularity": 1.0,
+            "daily_regularity": 1.0,
+            "overall_regularity": 1.0
+          }
+        },
+        "usage_intensity": {
+          "daily_stats": {
+            "average_daily_messages": 4.0,
+            "max_daily_messages": 4,
+            "min_daily_messages": 4,
+            "daily_variance": 0.0,
+            "active_days": 6
+          },
+          "weekly_stats": {
+            "average_weekly_messages": 12.0,
+            "max_weekly_messages": 16,
+            "weekly_variance": 32.0
+          },
+          "activity_distribution": {
+            "low_activity_days": 6,
+            "medium_activity_days": 0,
+            "high_activity_days": 0
+          },
+          "usage_streaks": {
+            "longest_streak": 6,
+            "average_streak": 6,
+            "total_streaks": 1
+          },
+          "usage_consistency": 1.0
+        },
+        "behavioral_changes": {
+          "insufficient_data": true
+        },
+        "session_analysis": {
+          "session_overview": {
+            "total_sessions": 24,
+            "avg_session_duration_minutes": 0.0,
+            "avg_messages_per_session": 1.0,
+            "longest_session_minutes": 0.0,
+            "shortest_session_minutes": 0.0
+          },
+          "session_timing": {
+            "preferred_session_hours": {
+              "7": 4,
+              "8": 4,
+              "9": 4,
+              "10": 4,
+              "11": 4
+            },
+            "preferred_session_days": {
+              "3": 4,
+              "4": 4,
+              "5": 4,
+              "6": 4,
+              "0": 4,
+              "1": 4
+            }
+          },
+          "session_intensity": {
+            "short_sessions": 24,
+            "medium_sessions": 0,
+            "long_sessions": 0
+          }
+        },
+        "circadian_patterns": {
+          "circadian_distribution": {
+            "morning": {
+              "count": 20,
+              "percentage": 83.33333333333334
+            },
+            "afternoon": {
+              "count": 4,
+              "percentage": 16.666666666666664
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 0,
+              "percentage": 0.0
+            }
+          },
+          "chronotype": "morning_person",
+          "peak_activity_period": "morning",
+          "circadian_regularity": 0.4362085839710631
+        },
+        "weekly_patterns": {
+          "daily_distribution": {
+            "monday": 4,
+            "tuesday": 4,
+            "wednesday": 0,
+            "thursday": 4,
+            "friday": 4,
+            "saturday": 4,
+            "sunday": 4
+          },
+          "weekday_vs_weekend": {
+            "weekday_percentage": 66.66666666666666,
+            "weekend_percentage": 33.33333333333333,
+            "weekend_preference": false
+          },
+          "most_active_day": "Thursday",
+          "weekly_consistency": 1.0
+        },
+        "seasonal_patterns": {
+          "monthly_distribution": {
+            "6": 24
+          },
+          "seasonal_distribution": {
+            "summer": 24
+          },
+          "peak_season": "summer",
+          "seasonal_variance": NaN,
+          "usage_seasonality": 0.0
+        },
+        "engagement_evolution": {
+          "weekly_engagement": {
+            "24": {
+              "message_length": 1.4375,
+              "message_count": 16
+            },
+            "25": {
+              "message_length": 2.0,
+              "message_count": 8
+            }
+          },
+          "engagement_trends": {
+            "message_frequency_trend": -8.0,
+            "message_length_trend": 0.5624999999999997,
+            "overall_engagement_direction": "decreasing"
+          },
+          "engagement_phases": []
+        }
+      },
+      "messages_word_count": {
+        "activity_patterns": {
+          "hourly_distribution": {
+            "0": 24
+          },
+          "daily_distribution": {
+            "3": 24
+          },
+          "monthly_distribution": {
+            "1": 24
+          },
+          "peak_activity_hour": 0,
+          "peak_activity_day": 3,
+          "time_period_breakdown": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 24,
+              "percentage": 100.0
+            }
+          },
+          "activity_regularity": {
+            "hourly_regularity": 0.0,
+            "daily_regularity": 0.0,
+            "overall_regularity": 0.0
+          }
+        },
+        "usage_intensity": {
+          "daily_stats": {
+            "average_daily_messages": 24.0,
+            "max_daily_messages": 24,
+            "min_daily_messages": 24,
+            "daily_variance": NaN,
+            "active_days": 1
+          },
+          "weekly_stats": {
+            "average_weekly_messages": 24.0,
+            "max_weekly_messages": 24,
+            "weekly_variance": NaN
+          },
+          "activity_distribution": {
+            "low_activity_days": 1,
+            "medium_activity_days": 0,
+            "high_activity_days": 0
+          },
+          "usage_streaks": {
+            "longest_streak": 1,
+            "average_streak": 1,
+            "total_streaks": 1
+          },
+          "usage_consistency": 0.0
+        },
+        "behavioral_changes": {
+          "insufficient_data": true
+        },
+        "session_analysis": {
+          "session_overview": {
+            "total_sessions": 1,
+            "avg_session_duration_minutes": 3e-10,
+            "avg_messages_per_session": 24.0,
+            "longest_session_minutes": 3e-10,
+            "shortest_session_minutes": 3e-10
+          },
+          "session_timing": {
+            "preferred_session_hours": {
+              "0": 1
+            },
+            "preferred_session_days": {
+              "3": 1
+            }
+          },
+          "session_intensity": {
+            "short_sessions": 1,
+            "medium_sessions": 0,
+            "long_sessions": 1
+          }
+        },
+        "circadian_patterns": {
+          "circadian_distribution": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 24,
+              "percentage": 100.0
+            }
+          },
+          "chronotype": "night_owl",
+          "peak_activity_period": "night",
+          "circadian_regularity": 1.0
+        },
+        "weekly_patterns": {
+          "daily_distribution": {
+            "monday": 0,
+            "tuesday": 0,
+            "wednesday": 0,
+            "thursday": 24,
+            "friday": 0,
+            "saturday": 0,
+            "sunday": 0
+          },
+          "weekday_vs_weekend": {
+            "weekday_percentage": 100.0,
+            "weekend_percentage": 0.0,
+            "weekend_preference": false
+          },
+          "most_active_day": "Thursday",
+          "weekly_consistency": 0.0
+        },
+        "seasonal_patterns": {
+          "monthly_distribution": {
+            "1": 24
+          },
+          "seasonal_distribution": {
+            "winter": 24
+          },
+          "peak_season": "winter",
+          "seasonal_variance": NaN,
+          "usage_seasonality": 0.0
+        },
+        "engagement_evolution": {
+          "weekly_engagement": {
+            "1": {
+              "message_length": 1.625,
+              "message_count": 24
+            }
+          },
+          "engagement_trends": {
+            "message_frequency_trend": 0.0,
+            "message_length_trend": 0.0,
+            "overall_engagement_direction": "decreasing"
+          },
+          "engagement_phases": []
+        }
+      },
+      "user_sessions_id": {
+        "activity_patterns": {
+          "hourly_distribution": {
+            "0": 12
+          },
+          "daily_distribution": {
+            "3": 12
+          },
+          "monthly_distribution": {
+            "1": 12
+          },
+          "peak_activity_hour": 0,
+          "peak_activity_day": 3,
+          "time_period_breakdown": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 12,
+              "percentage": 100.0
+            }
+          },
+          "activity_regularity": {
+            "hourly_regularity": 0.0,
+            "daily_regularity": 0.0,
+            "overall_regularity": 0.0
+          }
+        },
+        "usage_intensity": {
+          "daily_stats": {
+            "average_daily_messages": 12.0,
+            "max_daily_messages": 12,
+            "min_daily_messages": 12,
+            "daily_variance": NaN,
+            "active_days": 1
+          },
+          "weekly_stats": {
+            "average_weekly_messages": 12.0,
+            "max_weekly_messages": 12,
+            "weekly_variance": NaN
+          },
+          "activity_distribution": {
+            "low_activity_days": 1,
+            "medium_activity_days": 0,
+            "high_activity_days": 0
+          },
+          "usage_streaks": {
+            "longest_streak": 1,
+            "average_streak": 1,
+            "total_streaks": 1
+          },
+          "usage_consistency": 0.0
+        },
+        "behavioral_changes": {
+          "insufficient_data": true
+        },
+        "session_analysis": {
+          "session_overview": {
+            "total_sessions": 1,
+            "avg_session_duration_minutes": 1.8333333333333332e-10,
+            "avg_messages_per_session": 12.0,
+            "longest_session_minutes": 1.8333333333333332e-10,
+            "shortest_session_minutes": 1.8333333333333332e-10
+          },
+          "session_timing": {
+            "preferred_session_hours": {
+              "0": 1
+            },
+            "preferred_session_days": {
+              "3": 1
+            }
+          },
+          "session_intensity": {
+            "short_sessions": 1,
+            "medium_sessions": 0,
+            "long_sessions": 0
+          }
+        },
+        "circadian_patterns": {
+          "circadian_distribution": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 12,
+              "percentage": 100.0
+            }
+          },
+          "chronotype": "night_owl",
+          "peak_activity_period": "night",
+          "circadian_regularity": 1.0
+        },
+        "weekly_patterns": {
+          "daily_distribution": {
+            "monday": 0,
+            "tuesday": 0,
+            "wednesday": 0,
+            "thursday": 12,
+            "friday": 0,
+            "saturday": 0,
+            "sunday": 0
+          },
+          "weekday_vs_weekend": {
+            "weekday_percentage": 100.0,
+            "weekend_percentage": 0.0,
+            "weekend_preference": false
+          },
+          "most_active_day": "Thursday",
+          "weekly_consistency": 0.0
+        },
+        "seasonal_patterns": {
+          "monthly_distribution": {
+            "1": 12
+          },
+          "seasonal_distribution": {
+            "winter": 12
+          },
+          "peak_season": "winter",
+          "seasonal_variance": NaN,
+          "usage_seasonality": 0.0
+        },
+        "engagement_evolution": {
+          "weekly_engagement": {
+            "1": {
+              "message_length": 29.0,
+              "message_count": 12
+            }
+          },
+          "engagement_trends": {
+            "message_frequency_trend": 0.0,
+            "message_length_trend": 0.0,
+            "overall_engagement_direction": "decreasing"
+          },
+          "engagement_phases": []
+        }
+      },
+      "user_sessions_start_time": {
+        "activity_patterns": {
+          "hourly_distribution": {
+            "7": 4,
+            "9": 4,
+            "11": 4
+          },
+          "daily_distribution": {
+            "0": 2,
+            "1": 2,
+            "3": 2,
+            "4": 2,
+            "5": 2,
+            "6": 2
+          },
+          "monthly_distribution": {
+            "6": 12
+          },
+          "peak_activity_hour": 7,
+          "peak_activity_day": 0,
+          "time_period_breakdown": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 12,
+              "percentage": 100.0
+            }
+          },
+          "activity_regularity": {
+            "hourly_regularity": 1.0,
+            "daily_regularity": 1.0,
+            "overall_regularity": 1.0
+          }
+        },
+        "usage_intensity": {
+          "daily_stats": {
+            "average_daily_messages": 2.0,
+            "max_daily_messages": 2,
+            "min_daily_messages": 2,
+            "daily_variance": 0.0,
+            "active_days": 6
+          },
+          "weekly_stats": {
+            "average_weekly_messages": 6.0,
+            "max_weekly_messages": 8,
+            "weekly_variance": 8.0
+          },
+          "activity_distribution": {
+            "low_activity_days": 6,
+            "medium_activity_days": 0,
+            "high_activity_days": 0
+          },
+          "usage_streaks": {
+            "longest_streak": 6,
+            "average_streak": 6,
+            "total_streaks": 1
+          },
+          "usage_consistency": 1.0
+        },
+        "behavioral_changes": {
+          "insufficient_data": true
+        },
+        "session_analysis": {
+          "session_overview": {
+            "total_sessions": 12,
+            "avg_session_duration_minutes": 0.0,
+            "avg_messages_per_session": 1.0,
+            "longest_session_minutes": 0.0,
+            "shortest_session_minutes": 0.0
+          },
+          "session_timing": {
+            "preferred_session_hours": {
+              "7": 4,
+              "9": 4,
+              "11": 4
+            },
+            "preferred_session_days": {
+              "3": 2,
+              "4": 2,
+              "5": 2,
+              "6": 2,
+              "0": 2,
+              "1": 2
+            }
+          },
+          "session_intensity": {
+            "short_sessions": 12,
+            "medium_sessions": 0,
+            "long_sessions": 0
+          }
+        },
+        "circadian_patterns": {
+          "circadian_distribution": {
+            "morning": {
+              "count": 12,
+              "percentage": 100.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 0,
+              "percentage": 0.0
+            }
+          },
+          "chronotype": "morning_person",
+          "peak_activity_period": "morning",
+          "circadian_regularity": 0.6543128759565947
+        },
+        "weekly_patterns": {
+          "daily_distribution": {
+            "monday": 2,
+            "tuesday": 2,
+            "wednesday": 0,
+            "thursday": 2,
+            "friday": 2,
+            "saturday": 2,
+            "sunday": 2
+          },
+          "weekday_vs_weekend": {
+            "weekday_percentage": 66.66666666666666,
+            "weekend_percentage": 33.33333333333333,
+            "weekend_preference": false
+          },
+          "most_active_day": "Thursday",
+          "weekly_consistency": 1.0
+        },
+        "seasonal_patterns": {
+          "monthly_distribution": {
+            "6": 12
+          },
+          "seasonal_distribution": {
+            "summer": 12
+          },
+          "peak_season": "summer",
+          "seasonal_variance": NaN,
+          "usage_seasonality": 0.0
+        },
+        "engagement_evolution": {
+          "weekly_engagement": {
+            "24": {
+              "message_length": 1.0,
+              "message_count": 8
+            },
+            "25": {
+              "message_length": 1.75,
+              "message_count": 4
+            }
+          },
+          "engagement_trends": {
+            "message_frequency_trend": -4.0,
+            "message_length_trend": 0.7499999999999998,
+            "overall_engagement_direction": "decreasing"
+          },
+          "engagement_phases": []
+        }
+      },
+      "user_sessions_end_time": {
+        "activity_patterns": {
+          "hourly_distribution": {
+            "7": 3,
+            "9": 4,
+            "11": 4,
+            "12": 1
+          },
+          "daily_distribution": {
+            "0": 2,
+            "1": 3,
+            "3": 1,
+            "4": 2,
+            "5": 2,
+            "6": 2
+          },
+          "monthly_distribution": {
+            "6": 12
+          },
+          "peak_activity_hour": 9,
+          "peak_activity_day": 1,
+          "time_period_breakdown": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 12,
+              "percentage": 100.0
+            }
+          },
+          "activity_regularity": {
+            "hourly_regularity": 0.7642977396044841,
+            "daily_regularity": 0.841886116991581,
+            "overall_regularity": 0.8030919282980326
+          }
+        },
+        "usage_intensity": {
+          "daily_stats": {
+            "average_daily_messages": 2.0,
+            "max_daily_messages": 3,
+            "min_daily_messages": 1,
+            "daily_variance": 0.4,
+            "active_days": 6
+          },
+          "weekly_stats": {
+            "average_weekly_messages": 6.0,
+            "max_weekly_messages": 7,
+            "weekly_variance": 2.0
+          },
+          "activity_distribution": {
+            "low_activity_days": 5,
+            "medium_activity_days": 0,
+            "high_activity_days": 1
+          },
+          "usage_streaks": {
+            "longest_streak": 6,
+            "average_streak": 6,
+            "total_streaks": 1
+          },
+          "usage_consistency": 0.841886116991581
+        },
+        "behavioral_changes": {
+          "insufficient_data": true
+        },
+        "session_analysis": {
+          "session_overview": {
+            "total_sessions": 12,
+            "avg_session_duration_minutes": 0.0,
+            "avg_messages_per_session": 1.0,
+            "longest_session_minutes": 0.0,
+            "shortest_session_minutes": 0.0
+          },
+          "session_timing": {
+            "preferred_session_hours": {
+              "9": 4,
+              "11": 4,
+              "7": 3,
+              "12": 1
+            },
+            "preferred_session_days": {
+              "1": 3,
+              "4": 2,
+              "6": 2,
+              "5": 2,
+              "0": 2,
+              "3": 1
+            }
+          },
+          "session_intensity": {
+            "short_sessions": 12,
+            "medium_sessions": 0,
+            "long_sessions": 0
+          }
+        },
+        "circadian_patterns": {
+          "circadian_distribution": {
+            "morning": {
+              "count": 11,
+              "percentage": 91.66666666666666
+            },
+            "afternoon": {
+              "count": 1,
+              "percentage": 8.333333333333332
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 0,
+              "percentage": 0.0
+            }
+          },
+          "chronotype": "morning_person",
+          "peak_activity_period": "morning",
+          "circadian_regularity": 0.5953317956437583
+        },
+        "weekly_patterns": {
+          "daily_distribution": {
+            "monday": 2,
+            "tuesday": 3,
+            "wednesday": 0,
+            "thursday": 1,
+            "friday": 2,
+            "saturday": 2,
+            "sunday": 2
+          },
+          "weekday_vs_weekend": {
+            "weekday_percentage": 66.66666666666666,
+            "weekend_percentage": 33.33333333333333,
+            "weekend_preference": false
+          },
+          "most_active_day": "Tuesday",
+          "weekly_consistency": 0.841886116991581
+        },
+        "seasonal_patterns": {
+          "monthly_distribution": {
+            "6": 12
+          },
+          "seasonal_distribution": {
+            "summer": 12
+          },
+          "peak_season": "summer",
+          "seasonal_variance": NaN,
+          "usage_seasonality": 0.0
+        },
+        "engagement_evolution": {
+          "weekly_engagement": {
+            "24": {
+              "message_length": 1.0,
+              "message_count": 7
+            },
+            "25": {
+              "message_length": 1.6,
+              "message_count": 5
+            }
+          },
+          "engagement_trends": {
+            "message_frequency_trend": -2.000000000000001,
+            "message_length_trend": 0.5999999999999998,
+            "overall_engagement_direction": "decreasing"
+          },
+          "engagement_phases": []
+        }
+      },
+      "user_sessions_duration_minutes": {
+        "activity_patterns": {
+          "hourly_distribution": {
+            "0": 10,
+            "23": 2
+          },
+          "daily_distribution": {
+            "2": 2,
+            "3": 10
+          },
+          "monthly_distribution": {
+            "1": 10,
+            "12": 2
+          },
+          "peak_activity_hour": 0,
+          "peak_activity_day": 3,
+          "time_period_breakdown": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 12,
+              "percentage": 100.0
+            }
+          },
+          "activity_regularity": {
+            "hourly_regularity": 0.5285954792089682,
+            "daily_regularity": 0.5285954792089682,
+            "overall_regularity": 0.5285954792089682
+          }
+        },
+        "usage_intensity": {
+          "daily_stats": {
+            "average_daily_messages": 6.0,
+            "max_daily_messages": 10,
+            "min_daily_messages": 2,
+            "daily_variance": 32.0,
+            "active_days": 2
+          },
+          "weekly_stats": {
+            "average_weekly_messages": 12.0,
+            "max_weekly_messages": 12,
+            "weekly_variance": NaN
+          },
+          "activity_distribution": {
+            "low_activity_days": 1,
+            "medium_activity_days": 0,
+            "high_activity_days": 1
+          },
+          "usage_streaks": {
+            "longest_streak": 2,
+            "average_streak": 2,
+            "total_streaks": 1
+          },
+          "usage_consistency": 0.5285954792089682
+        },
+        "behavioral_changes": {
+          "insufficient_data": true
+        },
+        "session_analysis": {
+          "session_overview": {
+            "total_sessions": 1,
+            "avg_session_duration_minutes": 2.9e-08,
+            "avg_messages_per_session": 12.0,
+            "longest_session_minutes": 2.9e-08,
+            "shortest_session_minutes": 2.9e-08
+          },
+          "session_timing": {
+            "preferred_session_hours": {
+              "23": 1
+            },
+            "preferred_session_days": {
+              "2": 1
+            }
+          },
+          "session_intensity": {
+            "short_sessions": 1,
+            "medium_sessions": 0,
+            "long_sessions": 0
+          }
+        },
+        "circadian_patterns": {
+          "circadian_distribution": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 2,
+              "percentage": 16.666666666666664
+            },
+            "night": {
+              "count": 10,
+              "percentage": 83.33333333333334
+            }
+          },
+          "chronotype": "night_owl",
+          "peak_activity_period": "night",
+          "circadian_regularity": 0.858227319951665
+        },
+        "weekly_patterns": {
+          "daily_distribution": {
+            "monday": 0,
+            "tuesday": 0,
+            "wednesday": 2,
+            "thursday": 10,
+            "friday": 0,
+            "saturday": 0,
+            "sunday": 0
+          },
+          "weekday_vs_weekend": {
+            "weekday_percentage": 100.0,
+            "weekend_percentage": 0.0,
+            "weekend_preference": false
+          },
+          "most_active_day": "Thursday",
+          "weekly_consistency": 0.5285954792089682
+        },
+        "seasonal_patterns": {
+          "monthly_distribution": {
+            "1": 10,
+            "12": 2
+          },
+          "seasonal_distribution": {
+            "winter": 12
+          },
+          "peak_season": "winter",
+          "seasonal_variance": NaN,
+          "usage_seasonality": 0.0
+        },
+        "engagement_evolution": {
+          "weekly_engagement": {
+            "1": {
+              "message_length": 1.25,
+              "message_count": 12
+            }
+          },
+          "engagement_trends": {
+            "message_frequency_trend": 0.0,
+            "message_length_trend": 0.0,
+            "overall_engagement_direction": "decreasing"
+          },
+          "engagement_phases": []
+        }
+      },
+      "user_sessions_message_count": {
+        "activity_patterns": {
+          "hourly_distribution": {
+            "0": 12
+          },
+          "daily_distribution": {
+            "3": 12
+          },
+          "monthly_distribution": {
+            "1": 12
+          },
+          "peak_activity_hour": 0,
+          "peak_activity_day": 3,
+          "time_period_breakdown": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 12,
+              "percentage": 100.0
+            }
+          },
+          "activity_regularity": {
+            "hourly_regularity": 0.0,
+            "daily_regularity": 0.0,
+            "overall_regularity": 0.0
+          }
+        },
+        "usage_intensity": {
+          "daily_stats": {
+            "average_daily_messages": 12.0,
+            "max_daily_messages": 12,
+            "min_daily_messages": 12,
+            "daily_variance": NaN,
+            "active_days": 1
+          },
+          "weekly_stats": {
+            "average_weekly_messages": 12.0,
+            "max_weekly_messages": 12,
+            "weekly_variance": NaN
+          },
+          "activity_distribution": {
+            "low_activity_days": 1,
+            "medium_activity_days": 0,
+            "high_activity_days": 0
+          },
+          "usage_streaks": {
+            "longest_streak": 1,
+            "average_streak": 1,
+            "total_streaks": 1
+          },
+          "usage_consistency": 0.0
+        },
+        "behavioral_changes": {
+          "insufficient_data": true
+        },
+        "session_analysis": {
+          "session_overview": {
+            "total_sessions": 1,
+            "avg_session_duration_minutes": 0.0,
+            "avg_messages_per_session": 12.0,
+            "longest_session_minutes": 0.0,
+            "shortest_session_minutes": 0.0
+          },
+          "session_timing": {
+            "preferred_session_hours": {
+              "0": 1
+            },
+            "preferred_session_days": {
+              "3": 1
+            }
+          },
+          "session_intensity": {
+            "short_sessions": 1,
+            "medium_sessions": 0,
+            "long_sessions": 0
+          }
+        },
+        "circadian_patterns": {
+          "circadian_distribution": {
+            "morning": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "afternoon": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "evening": {
+              "count": 0,
+              "percentage": 0.0
+            },
+            "night": {
+              "count": 12,
+              "percentage": 100.0
+            }
+          },
+          "chronotype": "night_owl",
+          "peak_activity_period": "night",
+          "circadian_regularity": 1.0
+        },
+        "weekly_patterns": {
+          "daily_distribution": {
+            "monday": 0,
+            "tuesday": 0,
+            "wednesday": 0,
+            "thursday": 12,
+            "friday": 0,
+            "saturday": 0,
+            "sunday": 0
+          },
+          "weekday_vs_weekend": {
+            "weekday_percentage": 100.0,
+            "weekend_percentage": 0.0,
+            "weekend_preference": false
+          },
+          "most_active_day": "Thursday",
+          "weekly_consistency": 0.0
+        },
+        "seasonal_patterns": {
+          "monthly_distribution": {
+            "1": 12
+          },
+          "seasonal_distribution": {
+            "winter": 12
+          },
+          "peak_season": "winter",
+          "seasonal_variance": NaN,
+          "usage_seasonality": 0.0
+        },
+        "engagement_evolution": {
+          "weekly_engagement": {
+            "1": {
+              "message_length": 1.25,
+              "message_count": 12
+            }
+          },
+          "engagement_trends": {
+            "message_frequency_trend": 0.0,
+            "message_length_trend": 0.0,
+            "overall_engagement_direction": "decreasing"
+          },
+          "engagement_phases": []
+        }
+      }
+    },
+    "relationship_analysis": {
+      "emotional_patterns": {},
+      "relationship_indicators": {},
+      "relationship_metrics": {
+        "emotional_intensity": 0,
+        "intimacy_level": 0,
+        "dependency_indicators": 0,
+        "relationship_progression": "unknown",
+        "attachment_style": "unknown"
+      },
+      "attachment_analysis": {
+        "predicted_style": "insufficient_data",
+        "confidence": 0.0
+      }
+    },
+    "risk_assessment": {
+      "risk_level": "low",
+      "risk_factors": [],
+      "concerning_patterns": [],
+      "recommendations": [
+        "Continue monitoring for changes in usage patterns"
+      ]
+    }
+  },
+  "forensic_profile": {
+    "profile_metadata": {
+      "profile_generated": "2025-09-09T13:11:02.157939",
+      "database_source": "C:\\Users\\tspin\\AppData\\Local\\Temp\\tmpseikjimh.db",
+      "app_identified": "unknown",
+      "confidence_level": 0.0,
+      "analysis_completeness": 1.0,
+      "data_quality_score": 0.635
+    },
+    "user_characteristics": {
+      "communication_style": "unknown",
+      "personality_traits": [],
+      "interests_and_topics": [],
+      "language_complexity": 0.5753478993100745,
+      "emotional_expression": "moderate"
+    },
+    "behavioral_patterns": {
+      "usage_patterns": {
+        "peak_hour": 0,
+        "peak_day": 3,
+        "daily_average": 12.0
+      },
+      "interaction_style": {},
+      "activity_rhythm": {},
+      "engagement_level": "moderate"
+    },
+    "psychological_indicators": {
+      "emotional_state": "neutral",
+      "social_needs": [],
+      "coping_mechanisms": [],
+      "attachment_indicators": [],
+      "risk_indicators": []
+    },
+    "relationship_dynamics": {
+      "attachment_style": "insufficient_data",
+      "intimacy_level": 0,
+      "dependency_level": 0,
+      "emotional_investment": "low",
+      "relationship_progression": "unknown"
+    },
+    "temporal_behavior": {
+      "chronotype": "night_owl",
+      "activity_regularity": 0.0,
+      "usage_consistency": 0,
+      "peak_activity_periods": [],
+      "behavioral_changes": []
+    },
+    "risk_factors": {
+      "overall_risk_level": "low",
+      "identified_risks": [],
+      "concerning_patterns": [],
+      "mitigation_recommendations": [
+        "Continue monitoring for changes in usage patterns"
+      ]
+    },
+    "investigation_insights": {
+      "key_findings": [],
+      "evidence_strength": {
+        "overall_strength": "strong",
+        "data_quality": "0.64",
+        "analysis_completeness": "1.00"
+      },
+      "further_investigation": [
+        "Obtain additional data sources to improve analysis completeness"
+      ],
+      "timeline_reconstruction": {
+        "first_activity": null,
+        "last_activity": null,
+        "significant_events": [],
+        "activity_phases": []
+      },
+      "behavioral_summary": "Behavioral summary unavailable - profile not generated"
+    }
+  },
+  "metadata": {
+    "generated_at": "2025-09-09T13:11:02.579803",
+    "version": "1.0"
+  }
+}
