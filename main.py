@@ -53,6 +53,13 @@ Legal Notice:
     identify_parser.add_argument("path", help="Path to filesystem image (ZIP file or directory) to scan")
     identify_parser.add_argument("--output", "-o", help="Output JSON file", default="output/databases_identified.json")
     
+    # Data extraction command
+    extract_parser = subparsers.add_parser("extract", help="Extract data from identified databases")
+    extract_parser.add_argument("input", help="Path to scan results JSON file or specific database file")
+    extract_parser.add_argument("--output", "-o", help="Output JSON file", default="output/extracted_data.json")
+    extract_parser.add_argument("--database", "-d", help="Extract from specific database file (skip scan results)")
+    extract_parser.add_argument("--type", "-t", help="Database type (SQLite, JSON, LevelDB)", default="SQLite")
+    
     # Parse arguments
     args = parser.parse_args()
     
@@ -67,6 +74,8 @@ Legal Notice:
     try:
         if args.command == "identify":
             return identify_databases(args, logger)
+        elif args.command == "extract":
+            return extract_data(args, logger)
         else:
             logger.error(f"Unknown command: {args.command}")
             return 1
@@ -99,6 +108,93 @@ def identify_databases(args, logger):
     else:
         logger.error(f"Input must be a directory or ZIP file: {args.path}")
         return 1
+
+def extract_data(args, logger):
+    """Execute data extraction command."""
+    logger.info("Starting Forensic Chat Analyzer - Data Extraction")
+    
+    # Import data extraction modules
+    from src.core.data_extractor import DataExtractor
+    from src.extractors.sqlite_extractor import SQLiteExtractor
+    
+    # Create output directory
+    output_dir = os.path.dirname(args.output)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+    
+    # Check if extracting from specific database or scan results
+    if args.database:
+        logger.info(f"Extracting from specific database: {args.database}")
+        
+        if not os.path.exists(args.database):
+            logger.error(f"Database file not found: {args.database}")
+            return 1
+        
+        # Extract from specific database
+        if args.type.lower() == 'sqlite':
+            with SQLiteExtractor() as extractor:
+                results = extractor.extract_messages(args.database)
+        else:
+            # Use general data extractor
+            extractor = DataExtractor()
+            results = extractor.extract_messages(args.database, args.type)
+        
+        if not results:
+            logger.error("Failed to extract data from database")
+            return 1
+            
+    else:
+        logger.info(f"Extracting from scan results: {args.input}")
+        
+        if not os.path.exists(args.input):
+            logger.error(f"Scan results file not found: {args.input}")
+            return 1
+        
+        # Extract from scan results
+        extractor = DataExtractor()
+        results = extractor.extract_from_scan_results(args.input)
+        
+        if not results:
+            logger.error("Failed to extract data from scan results")
+            return 1
+    
+    # Save results
+    try:
+        import json
+        with open(args.output, 'w') as f:
+            json.dump(results, f, indent=2, default=str)
+        logger.info(f"Extraction results saved to: {args.output}")
+    except Exception as e:
+        logger.error(f"Failed to save results: {e}")
+        return 1
+    
+    # Print summary
+    print("\n" + "="*60)
+    print("FORENSIC CHAT ANALYZER - EXTRACTION RESULTS")
+    print("="*60)
+    
+    if args.database:
+        print(f"Database: {args.database}")
+        print(f"Type: {args.type}")
+        if 'messages' in results:
+            print(f"Messages Extracted: {len(results['messages'])}")
+        if 'analysis' in results:
+            analysis = results['analysis']
+            if 'total_messages' in analysis:
+                print(f"Total Messages: {analysis['total_messages']}")
+            if 'date_range' in analysis and analysis['date_range']:
+                print(f"Date Range: {analysis['date_range']['earliest']} to {analysis['date_range']['latest']}")
+    else:
+        metadata = results.get('metadata', {})
+        print(f"Scan Results: {args.input}")
+        print(f"Databases Processed: {metadata.get('databases_processed', 0)}")
+        print(f"Messages Extracted: {metadata.get('messages_extracted', 0)}")
+        print(f"Errors: {len(metadata.get('errors', []))}")
+    
+    print(f"Results File: {args.output}")
+    print("="*60)
+    
+    return 0
     
     # Create output directory
     output_dir = os.path.dirname(args.output)
