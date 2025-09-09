@@ -6,6 +6,7 @@ import sys
 import os
 import argparse
 import logging
+import json
 from pathlib import Path
 
 # Add the src directory to the Python path
@@ -59,6 +60,8 @@ Legal Notice:
     extract_parser.add_argument("--output", "-o", help="Output JSON file", default="output/extracted_data.json")
     extract_parser.add_argument("--database", "-d", help="Extract from specific database file (skip scan results)")
     extract_parser.add_argument("--type", "-t", help="Database type (SQLite, JSON, LevelDB)", default="SQLite")
+    extract_parser.add_argument("--no-ml", action="store_true", help="Disable ML behavioral analysis")
+    extract_parser.add_argument("--ml-only", action="store_true", help="Perform only ML analysis on existing extraction results")
     
     # Parse arguments
     args = parser.parse_args()
@@ -136,7 +139,8 @@ def extract_data(args, logger):
                 results = extractor.extract_messages(args.database)
         else:
             # Use general data extractor
-            extractor = DataExtractor()
+            enable_ml = not args.no_ml
+            extractor = DataExtractor(enable_ml_analysis=enable_ml)
             results = extractor.extract_messages(args.database, args.type)
         
         if not results:
@@ -151,8 +155,34 @@ def extract_data(args, logger):
             return 1
         
         # Extract from scan results
-        extractor = DataExtractor()
-        results = extractor.extract_from_scan_results(args.input)
+        enable_ml = not args.no_ml
+        extractor = DataExtractor(enable_ml_analysis=enable_ml)
+        
+        if args.ml_only:
+            # Load existing extraction results and perform ML analysis
+            logger.info("Performing ML-only analysis on existing extraction results")
+            try:
+                with open(args.input, 'r') as f:
+                    existing_results = json.load(f)
+                
+                if 'extracted_data' not in existing_results:
+                    logger.error("Input file does not contain extraction results")
+                    return 1
+                
+                # Perform ML analysis
+                from src.analysis.ml_analyzer import MLAnalyzer
+                ml_analyzer = MLAnalyzer()
+                ml_results = ml_analyzer.analyze_extraction_results(existing_results)
+                
+                # Add ML results to existing data
+                existing_results['ml_analysis'] = ml_results
+                results = existing_results
+                
+            except Exception as e:
+                logger.error(f"Failed to perform ML-only analysis: {e}")
+                return 1
+        else:
+            results = extractor.extract_from_scan_results(args.input)
         
         if not results:
             logger.error("Failed to extract data from scan results")

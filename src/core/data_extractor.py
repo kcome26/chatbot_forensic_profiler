@@ -14,13 +14,30 @@ import logging
 from datetime import datetime
 import zipfile
 
+# Import ML analyzer
+try:
+    from ..analysis.ml_analyzer import MLAnalyzer
+    ML_ANALYZER_AVAILABLE = True
+except ImportError:
+    ML_ANALYZER_AVAILABLE = False
+    logger = logging.getLogger(__name__)
+    logger.warning("ML Analyzer not available")
+
 logger = logging.getLogger(__name__)
 
 class DataExtractor:
     """Extract and parse data from identified databases."""
     
-    def __init__(self):
+    def __init__(self, enable_ml_analysis: bool = True):
         self.supported_types = ['SQLite', 'JSON', 'LevelDB']
+        self.enable_ml_analysis = enable_ml_analysis and ML_ANALYZER_AVAILABLE
+        
+        if self.enable_ml_analysis:
+            self.ml_analyzer = MLAnalyzer()
+            logger.info("ML Analyzer enabled for behavioral profiling")
+        else:
+            self.ml_analyzer = None
+            logger.info("ML Analyzer disabled or unavailable")
         
     def extract_from_scan_results(self, scan_results_file: str) -> Dict[str, Any]:
         """
@@ -84,6 +101,19 @@ class DataExtractor:
                     extraction_results['metadata']['errors'].append(error_msg)
         
         extraction_results['metadata']['extraction_end'] = datetime.now().isoformat()
+        
+        # Perform ML analysis if enabled
+        if self.enable_ml_analysis and self.ml_analyzer:
+            logger.info("Starting ML behavioral analysis...")
+            try:
+                ml_results = self.ml_analyzer.analyze_extraction_results(extraction_results)
+                extraction_results['ml_analysis'] = ml_results
+                logger.info("ML analysis completed successfully")
+            except Exception as e:
+                error_msg = f"ML analysis failed: {str(e)}"
+                logger.error(error_msg)
+                extraction_results['metadata']['errors'].append(error_msg)
+        
         return extraction_results
     
     def extract_messages(self, database_path: str, db_type: str) -> Optional[Dict[str, Any]]:
