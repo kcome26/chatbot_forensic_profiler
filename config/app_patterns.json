@@ -1,0 +1,34 @@
+{
+  "Replika": [
+    "**/ai.replika.app/databases/*.db",
+    "**/ai.replika.app/databases/*.sqlite*",
+    "**/com.replika.app/databases/*.db",
+    "**/replika*/databases/*.db"
+  ],
+  "UShow_iChat": [
+    "**/com.aigc.ushow.ichat/databases/*.db",
+    "**/com.aigc.ushow.ichat/databases/*.sqlite*",
+    "**/ushow.ichat/databases/*.db"
+  ],
+  "AI_Persona_Camera": [
+    "**/com.aipersona.camera/databases/*.db",
+    "**/com.aipersona.camera/databases/*.sqlite*",
+    "**/aipersona*/databases/*.db"
+  ],
+  "Fantasy_AI": [
+    "**/online.fantasyai.android/databases/*.db",
+    "**/online.fantasyai.android/databases/*.sqlite*",
+    "**/fantasyai*/databases/*.db"
+  ],
+  "Character_AI": [
+    "**/ai.character.app/databases/*.db",
+    "**/ai.character.app/databases/*.sqlite*",
+    "**/character.ai/databases/*.db",
+    "**/com.characterai.app/databases/*.db"
+  ],
+  "Kindroid": [
+    "**/com.kindroid.app/databases/*.db",
+    "**/com.kindroid.app/databases/*.sqlite*",
+    "**/kindroid*/databases/*.db"
+  ]
+}

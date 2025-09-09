@@ -1,0 +1,54 @@
+# Core dependencies
+pathlib2==2.3.7
+sqlite3
+
+# Data processing and analysis
+pandas>=1.5.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+nltk>=3.8
+spacy>=3.4.0
+textblob>=0.17.1
+
+# Machine Learning
+transformers>=4.21.0
+torch>=1.12.0
+tensorflow>=2.10.0
+
+# Database handling
+sqlalchemy>=1.4.0
+plyvel>=1.5.0  # For LevelDB
+pymongo>=4.3.0
+
+# Forensic utilities
+python-magic>=0.4.27
+hashlib
+cryptography>=3.4.8
+
+# Logging and configuration
+pyyaml>=6.0
+configparser>=5.3.0
+
+# Data visualization and reporting
+matplotlib>=3.6.0
+seaborn>=0.12.0
+plotly>=5.11.0
+jinja2>=3.1.0
+
+# File handling
+chardet>=5.0.0
+python-dateutil>=2.8.0
+
+# CLI interface
+click>=8.1.0
+tqdm>=4.64.0
+
+# Testing and development
+pytest>=7.2.0
+pytest-cov>=4.0.0
+black>=22.10.0
+flake8>=5.0.0
+
+# Security and validation
+certifi>=2022.9.24
+requests>=2.28.0
