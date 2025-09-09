@@ -2,14 +2,6 @@
 
 A digital forensics tool for analyzing AI companion chatbot databases to create behavioral profiles.
 
-## ⚠️ Legal Notice
-
-This tool is intended for legitimate forensic investigations only. Users must:
-- Obtain proper legal authorization before use
-- Comply with applicable laws and regulations
-- Respect privacy rights and data protection laws
-- Follow proper chain of custody procedures
-
 ## Project Structure
 
 ```
@@ -74,7 +66,8 @@ pip install -r requirements.txt
 
 - Replika
 - Character.AI
-- Microsoft Copilot
-- ChatGPT
-- Claude
-- (Extensible for additional apps)
+- kindred.AI
+- persona.AI
+- fantasy.AI
+- linky.AI
+  
