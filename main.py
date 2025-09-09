@@ -50,7 +50,7 @@ Legal Notice:
     
     # Database identification command
     identify_parser = subparsers.add_parser("identify", help="Identify databases in filesystem image")
-    identify_parser.add_argument("path", help="Path to filesystem image or directory to scan")
+    identify_parser.add_argument("path", help="Path to filesystem image (ZIP file or directory) to scan")
     identify_parser.add_argument("--output", "-o", help="Output JSON file", default="output/databases_identified.json")
     
     # Parse arguments
@@ -83,11 +83,21 @@ Legal Notice:
 def identify_databases(args, logger):
     """Execute database identification command."""
     logger.info("Starting Forensic Chat Analyzer - Database Identification")
-    logger.info(f"Scanning path: {args.path}")
+    logger.info(f"Scanning input: {args.path}")
     
     # Validate input path
     if not os.path.exists(args.path):
         logger.error(f"Input path does not exist: {args.path}")
+        return 1
+    
+    # Check if input is a ZIP file or directory
+    import zipfile
+    if zipfile.is_zipfile(args.path):
+        logger.info(f"Input detected as ZIP file: {args.path}")
+    elif os.path.isdir(args.path):
+        logger.info(f"Input detected as directory: {args.path}")
+    else:
+        logger.error(f"Input must be a directory or ZIP file: {args.path}")
         return 1
     
     # Create output directory
@@ -110,7 +120,8 @@ def identify_databases(args, logger):
     print("\n" + "="*60)
     print("FORENSIC CHAT ANALYZER - IDENTIFICATION RESULTS")
     print("="*60)
-    print(f"Scan Path: {args.path}")
+    print(f"Input: {args.path}")
+    print(f"Input Type: {results['metadata']['input_type']}")
     print(f"Scan Duration: {results['metadata']['scan_duration_seconds']:.2f} seconds")
     print(f"Files Scanned: {results['metadata']['total_files_scanned']:,}")
     print(f"Databases Found: {results['metadata']['total_databases_found']}")

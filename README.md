@@ -43,13 +43,19 @@ pip install -r requirements.txt
 
 2. Run database identification:
    ```bash
-   # Basic usage
+   # Basic usage with directory
    python main.py identify /path/to/filesystem/image
+   
+   # Basic usage with ZIP file
+   python main.py identify /path/to/forensic_image.zip
    
    # With verbose output and custom results file
    python main.py --verbose identify /path/to/filesystem/image --output results/scan_results.json
    
-   # Windows example with full Python path
+   # Windows example with full Python path (ZIP file)
+   "C:\path\to\python.exe" main.py --verbose identify "C:\path\to\forensic_image.zip" --output "output/test_results.json"
+   
+   # Windows example with directory
    "C:\path\to\python.exe" main.py --verbose identify "C:\path\to\filesystem\image" --output "output/test_results.json"
    ```
 
@@ -65,12 +71,16 @@ pip install -r requirements.txt
 
 ## Features
 
-- Multi-platform database detection
-- Support for SQLite, LevelDB, and JSON formats
-- Machine learning-based message importance scoring
-- Behavioral pattern analysis
-- Comprehensive forensic reporting
-- Chain of custody documentation
+- **Flexible Input Support**: Accepts both directories and ZIP files
+- **Multi-platform Database Detection**: Identifies databases across various AI companion apps
+- **Multiple Database Formats**: Support for SQLite, LevelDB, and JSON formats
+- **Automatic ZIP Extraction**: Seamlessly handles compressed forensic images
+- **Forensic Integrity**: File hashing (MD5/SHA256) for evidence validation
+- **Comprehensive Metadata**: Timestamps, file sizes, and database types
+- **Machine Learning Ready**: Framework for ML-based message importance scoring
+- **Behavioral Pattern Analysis**: Foundation for user profiling
+- **Comprehensive Reporting**: Detailed JSON and console output
+- **Chain of Custody**: Complete documentation for legal compliance
 
 ## Supported Applications
 

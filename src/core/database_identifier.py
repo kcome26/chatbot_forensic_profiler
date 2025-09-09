@@ -11,6 +11,9 @@ import fnmatch
 import logging
 import sqlite3
 import json
+import zipfile
+import tempfile
+import shutil
 from typing import Dict, List, Tuple, Optional
 from datetime import datetime
 
@@ -93,24 +96,91 @@ class DatabaseIdentifier:
             logger.error(f"Failed to load config from {config_path}: {e}")
             return {}
     
-    def identify_databases(self, root_path: str, output_file: Optional[str] = None) -> Dict[str, List[Dict]]:
+    def identify_databases(self, input_path: str, output_file: Optional[str] = None) -> Dict[str, List[Dict]]:
         """
         Scan the filesystem for AI companion chatbot databases.
         
         Args:
-            root_path: Path to the filesystem image or directory to scan
+            input_path: Path to the filesystem image (directory or ZIP file) to scan
             output_file: Optional path to save results as JSON
             
         Returns:
             Dictionary of app names with lists of found database files and their metadata
         """
-        logger.info(f"Starting database identification scan on: {root_path}")
+        logger.info(f"Starting database identification scan on: {input_path}")
         start_time = datetime.now()
         
-        if not os.path.exists(root_path):
-            logger.error(f"Path does not exist: {root_path}")
+        if not os.path.exists(input_path):
+            logger.error(f"Input path does not exist: {input_path}")
             return {}
         
+        # Check if input is a ZIP file
+        if zipfile.is_zipfile(input_path):
+            logger.info(f"Input is a ZIP file. Extracting to temporary directory...")
+            temp_dir = self._extract_zip_file(input_path)
+            if not temp_dir:
+                return {}
+            root_path = temp_dir
+            cleanup_temp = True
+        else:
+            root_path = input_path
+            cleanup_temp = False
+        
+        try:
+            results = self._scan_directory(root_path, start_time, input_path)
+            
+            # Save results if output file specified
+            if output_file:
+                self._save_results(results, output_file)
+                
+            return results
+            
+        finally:
+            # Clean up temporary directory if we created one
+            if cleanup_temp and os.path.exists(root_path):
+                logger.info(f"Cleaning up temporary directory: {root_path}")
+                shutil.rmtree(root_path, ignore_errors=True)
+    
+    def _extract_zip_file(self, zip_path: str) -> Optional[str]:
+        """
+        Extract ZIP file to a temporary directory.
+        
+        Args:
+            zip_path: Path to the ZIP file
+            
+        Returns:
+            Path to temporary directory containing extracted files, or None if failed
+        """
+        try:
+            # Create temporary directory
+            temp_dir = tempfile.mkdtemp(prefix="forensic_analyzer_")
+            logger.info(f"Extracting ZIP to: {temp_dir}")
+            
+            # Extract ZIP file
+            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+                zip_ref.extractall(temp_dir)
+                
+            logger.info(f"Successfully extracted ZIP file")
+            return temp_dir
+            
+        except Exception as e:
+            logger.error(f"Failed to extract ZIP file {zip_path}: {e}")
+            if 'temp_dir' in locals() and os.path.exists(temp_dir):
+                shutil.rmtree(temp_dir, ignore_errors=True)
+            return None
+    
+    def _scan_directory(self, root_path: str, start_time: datetime, original_input: str) -> Dict[str, List[Dict]]:
+        """
+        Scan a directory for databases.
+        
+        Args:
+            root_path: Directory to scan
+            start_time: When the scan started
+            original_input: Original input path (for metadata)
+            
+        Returns:
+            Dictionary of scan results
+        """
         results = {}
         self.total_files_scanned = 0
         self.total_databases_found = 0
@@ -150,17 +220,15 @@ class DatabaseIdentifier:
             "scan_duration_seconds": scan_duration,
             "total_files_scanned": self.total_files_scanned,
             "total_databases_found": self.total_databases_found,
-            "root_path": root_path
+            "input_path": original_input,
+            "scan_path": root_path,
+            "input_type": "ZIP file" if zipfile.is_zipfile(original_input) else "Directory"
         }
         
         final_results = {
             "metadata": scan_metadata,
             "databases": results
         }
-        
-        # Save results if output file specified
-        if output_file:
-            self._save_results(final_results, output_file)
         
         # Log summary
         logger.info(f"Database identification complete.")
