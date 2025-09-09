@@ -6,7 +6,7 @@
         "file_path": "REPLIKA_DB",
         "total_tables": 52,
         "total_records": 576,
-        "extraction_time": "2025-09-09T13:23:52.486694",
+        "extraction_time": "2025-09-09T14:04:31.669707",
         "file_size": 0
       },
       "app_detection": {
@@ -5186,53 +5186,917 @@
     }
   },
   "forensic_profile": {
-    "profile_metadata": {
-      "profile_generated": "2025-09-09T13:23:59.806395",
-      "database_source": "REPLIKA_DB",
-      "app_identified": "unknown",
-      "confidence_level": 0.0,
-      "analysis_completeness": 1.0,
-      "data_quality_score": 0.2967143906156362
-    },
-    "user_characteristics": {
-      "communication_style": "unknown",
-      "personality_traits": [],
-      "interests_and_topics": [],
-      "language_complexity": 0.42341904979271483,
-      "emotional_expression": "moderate"
-    },
-    "behavioral_patterns": {
-      "usage_patterns": {
-        "peak_hour": 15,
-        "peak_day": 2,
-        "daily_average": 4.25
+    "investigation_summary": {
+      "case_information": {
+        "analysis_date": "2025-09-09T14:04:37.381482",
+        "database_source": "REPLIKA_DB",
+        "evidence_type": "AI Companion Application Data",
+        "total_data_points": 576,
+        "data_timespan": "Unknown timespan"
       },
-      "interaction_style": {},
-      "activity_rhythm": {},
-      "engagement_level": "moderate"
+      "investigation_scope": {
+        "primary_focus": "User behavioral patterns and interaction analysis",
+        "secondary_focus": "Emotional dependency and psychological indicators",
+        "evidence_quality": "High",
+        "analysis_completeness": 1.0
+      },
+      "key_statistics": {
+        "total_messages_analyzed": 1432,
+        "estimated_total_words": 11562,
+        "data_sources_found": 42,
+        "analysis_depth": "Comprehensive"
+      }
     },
-    "psychological_indicators": {
+    "subject_identification": {
+      "personal_information": {
+        "name": "jake paul",
+        "username": "hojage9630@kytstore.com",
+        "age": "35-44",
+        "location": "Not Available",
+        "contact_details": "Not Available"
+      },
+      "profile_details": {
+        "relationship_status": "Unknown",
+        "interests": [],
+        "preferences": {},
+        "account_creation": "Unknown",
+        "last_activity": "2025-08-12T16:13:21.430Z"
+      },
+      "identification_confidence": "High"
+    },
+    "key_evidence": {
+      "significant_conversations": [
+        {
+          "type": "Highly positive expression",
+          "sentiment_score": 0.9931,
+          "table_source": "chat_message"
+        },
+        {
+          "type": "Highly negative expression",
+          "sentiment_score": -0.5106,
+          "table_source": "chat_message"
+        }
+      ],
+      "behavioral_indicators": {
+        "communication_frequency": [
+          {
+            "source": "BundleDbo.url",
+            "total_messages": 26,
+            "avg_length": 77.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "BundleDbo.hash",
+            "total_messages": 26,
+            "avg_length": 32.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "AuthDbo.authToken",
+            "total_messages": 1,
+            "avg_length": 32.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "file_cache_unit.path_to_file",
+            "total_messages": 25,
+            "avg_length": 101.6,
+            "avg_words": 1.0
+          },
+          {
+            "source": "base_bundle.hash",
+            "total_messages": 11,
+            "avg_length": 34.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "base_bundle.url",
+            "total_messages": 11,
+            "avg_length": 91.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "sqlite_sequence.name",
+            "total_messages": 1,
+            "avg_length": 25.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "mission_category.name",
+            "total_messages": 15,
+            "avg_length": 19.133333333333333,
+            "avg_words": 2.533333333333333
+          },
+          {
+            "source": "mission_category.description",
+            "total_messages": 15,
+            "avg_length": 108.13333333333334,
+            "avg_words": 18.533333333333335
+          },
+          {
+            "source": "mission_category.background_url",
+            "total_messages": 15,
+            "avg_length": 108.66666666666667,
+            "avg_words": 1.0
+          },
+          {
+            "source": "mission_category.small_background_url",
+            "total_messages": 15,
+            "avg_length": 108.66666666666667,
+            "avg_words": 1.0
+          },
+          {
+            "source": "chat_message.text",
+            "total_messages": 281,
+            "avg_length": 192.7900355871886,
+            "avg_words": 34.669039145907476
+          },
+          {
+            "source": "chat_message.reactions",
+            "total_messages": 147,
+            "avg_length": 48.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "chat_message.client_token",
+            "total_messages": 281,
+            "avg_length": 36.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "chat_message.voice_url",
+            "total_messages": 281,
+            "avg_length": 5.056939501779359,
+            "avg_words": 1.0
+          },
+          {
+            "source": "avatar_model.image_url",
+            "total_messages": 1,
+            "avg_length": 81.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "avatar_model.small_image_url",
+            "total_messages": 1,
+            "avg_length": 81.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "avatar_model.body_type",
+            "total_messages": 1,
+            "avg_length": 89.0,
+            "avg_words": 6.0
+          },
+          {
+            "source": "avatar_model.gender",
+            "total_messages": 1,
+            "avg_length": 6.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "bot_profile.name",
+            "total_messages": 1,
+            "avg_length": 9.0,
+            "avg_words": 2.0
+          },
+          {
+            "source": "bot_profile.gender",
+            "total_messages": 1,
+            "avg_length": 6.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "bot_profile.unlockedFeatures",
+            "total_messages": 1,
+            "avg_length": 23.0,
+            "avg_words": 2.0
+          },
+          {
+            "source": "bot_profile.current_level_name",
+            "total_messages": 1,
+            "avg_length": 7.0,
+            "avg_words": 2.0
+          },
+          {
+            "source": "bot_profile.next_level_name",
+            "total_messages": 1,
+            "avg_length": 8.0,
+            "avg_words": 2.0
+          },
+          {
+            "source": "bot_profile.current_dialog_modelname",
+            "total_messages": 1,
+            "avg_length": 4.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "user_profile.first_name",
+            "total_messages": 1,
+            "avg_length": 9.0,
+            "avg_words": 2.0
+          },
+          {
+            "source": "user_profile.email",
+            "total_messages": 1,
+            "avg_length": 23.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "user_profile.user_gender_pronounce",
+            "total_messages": 1,
+            "avg_length": 4.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "user_profile.age_range",
+            "total_messages": 1,
+            "avg_length": 5.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "user_profile.conversation_language",
+            "total_messages": 1,
+            "avg_length": 2.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "memory_relation.name",
+            "total_messages": 78,
+            "avg_length": 8.012820512820513,
+            "avg_words": 1.3205128205128205
+          },
+          {
+            "source": "relationship_status.description",
+            "total_messages": 5,
+            "avg_length": 63.2,
+            "avg_words": 9.6
+          },
+          {
+            "source": "relationship_status.namehe",
+            "total_messages": 5,
+            "avg_length": 7.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "relationship_status.nameshe",
+            "total_messages": 5,
+            "avg_length": 6.4,
+            "avg_words": 1.0
+          },
+          {
+            "source": "relationship_status.namethey",
+            "total_messages": 5,
+            "avg_length": 6.4,
+            "avg_words": 1.0
+          },
+          {
+            "source": "network_connection_issues.class_name",
+            "total_messages": 10,
+            "avg_length": 44.0,
+            "avg_words": 1.0
+          },
+          {
+            "source": "memory_fact_v3.text",
+            "total_messages": 17,
+            "avg_length": 62.294117647058826,
+            "avg_words": 10.235294117647058
+          },
+          {
+            "source": "memory_category.name",
+            "total_messages": 11,
+            "avg_length": 11.636363636363637,
+            "avg_words": 1.7272727272727273
+          },
+          {
+            "source": "memory_category.type",
+            "total_messages": 11,
+            "avg_length": 10.818181818181818,
+            "avg_words": 1.0
+          },
+          {
+            "source": "memory_category.possible_replacements",
+            "total_messages": 11,
+            "avg_length": 144.54545454545453,
+            "avg_words": 5.636363636363637
+          },
+          {
+            "source": "bot_voices.voice_sample_url",
+            "total_messages": 54,
+            "avg_length": 92.68518518518519,
+            "avg_words": 1.0
+          },
+          {
+            "source": "bot_voices.name",
+            "total_messages": 54,
+            "avg_length": 16.61111111111111,
+            "avg_words": 2.6481481481481484
+          }
+        ],
+        "emotional_patterns": [
+          {
+            "source": "BundleDbo.url",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "BundleDbo.hash",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "AuthDbo.authToken",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "file_cache_unit.path_to_file",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "base_bundle.hash",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "base_bundle.url",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "sqlite_sequence.name",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "mission_category.name",
+            "positive_ratio": 0.3755333333333333,
+            "negative_ratio": 0.22086666666666668,
+            "neutral_ratio": 0.4036,
+            "compound_score": 0.10366666666666667
+          },
+          {
+            "source": "mission_category.description",
+            "positive_ratio": 0.1294,
+            "negative_ratio": 0.15073333333333333,
+            "neutral_ratio": 0.7196,
+            "compound_score": -0.054639999999999994
+          },
+          {
+            "source": "mission_category.background_url",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "mission_category.small_background_url",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "chat_message.text",
+            "positive_ratio": 0.22976868327402133,
+            "negative_ratio": 0.04830960854092527,
+            "neutral_ratio": 0.7183701067615659,
+            "compound_score": 0.5556975088967971
+          },
+          {
+            "source": "chat_message.reactions",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "chat_message.client_token",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "chat_message.voice_url",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "avatar_model.image_url",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "avatar_model.small_image_url",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "avatar_model.body_type",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "avatar_model.gender",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "bot_profile.name",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "bot_profile.gender",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "bot_profile.unlockedFeatures",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "bot_profile.current_level_name",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "bot_profile.next_level_name",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "bot_profile.current_dialog_modelname",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "user_profile.first_name",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "user_profile.email",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "user_profile.user_gender_pronounce",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "user_profile.age_range",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "user_profile.conversation_language",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "memory_relation.name",
+            "positive_ratio": 0.06485897435897436,
+            "negative_ratio": 0.01282051282051282,
+            "neutral_ratio": 0.9223205128205129,
+            "compound_score": 0.041569230769230775
+          },
+          {
+            "source": "relationship_status.description",
+            "positive_ratio": 0.33680000000000004,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 0.6632,
+            "compound_score": 0.50196
+          },
+          {
+            "source": "relationship_status.namehe",
+            "positive_ratio": 0.2,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 0.8,
+            "compound_score": 0.09878
+          },
+          {
+            "source": "relationship_status.nameshe",
+            "positive_ratio": 0.2,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 0.8,
+            "compound_score": 0.09878
+          },
+          {
+            "source": "relationship_status.namethey",
+            "positive_ratio": 0.2,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 0.8,
+            "compound_score": 0.09878
+          },
+          {
+            "source": "network_connection_issues.class_name",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "memory_fact_v3.text",
+            "positive_ratio": 0.2556470588235294,
+            "negative_ratio": 0.024235294117647056,
+            "neutral_ratio": 0.7201176470588235,
+            "compound_score": 0.35628823529411763
+          },
+          {
+            "source": "memory_category.name",
+            "positive_ratio": 0.22663636363636364,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 0.7733636363636364,
+            "compound_score": 0.11997272727272729
+          },
+          {
+            "source": "memory_category.type",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "memory_category.possible_replacements",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "bot_voices.voice_sample_url",
+            "positive_ratio": 0.0,
+            "negative_ratio": 0.0,
+            "neutral_ratio": 1.0,
+            "compound_score": 0.0
+          },
+          {
+            "source": "bot_voices.name",
+            "positive_ratio": 0.5420185185185185,
+            "negative_ratio": 0.012537037037037038,
+            "neutral_ratio": 0.4454444444444445,
+            "compound_score": 0.37267407407407405
+          }
+        ],
+        "language_indicators": [
+          {
+            "source": "BundleDbo.url",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "BundleDbo.hash",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "AuthDbo.authToken",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 12
+          },
+          {
+            "source": "file_cache_unit.path_to_file",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 440
+          },
+          {
+            "source": "base_bundle.hash",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "base_bundle.url",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "sqlite_sequence.name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "mission_category.name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 15
+          },
+          {
+            "source": "mission_category.description",
+            "questions_frequency": 0.3333333333333333,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 26
+          },
+          {
+            "source": "mission_category.background_url",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 60
+          },
+          {
+            "source": "mission_category.small_background_url",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 60
+          },
+          {
+            "source": "chat_message.text",
+            "questions_frequency": 0.797153024911032,
+            "exclamations_frequency": 1.199288256227758,
+            "capital_usage": 2465
+          },
+          {
+            "source": "chat_message.reactions",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 882
+          },
+          {
+            "source": "chat_message.client_token",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "chat_message.voice_url",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 278
+          },
+          {
+            "source": "avatar_model.image_url",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "avatar_model.small_image_url",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "avatar_model.body_type",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "avatar_model.gender",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "bot_profile.name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "bot_profile.gender",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "bot_profile.unlockedFeatures",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "bot_profile.current_level_name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 1
+          },
+          {
+            "source": "bot_profile.next_level_name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 1
+          },
+          {
+            "source": "bot_profile.current_dialog_modelname",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 1
+          },
+          {
+            "source": "user_profile.first_name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "user_profile.email",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "user_profile.user_gender_pronounce",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "user_profile.age_range",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "user_profile.conversation_language",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "memory_relation.name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 78
+          },
+          {
+            "source": "relationship_status.description",
+            "questions_frequency": 0.4,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 9
+          },
+          {
+            "source": "relationship_status.namehe",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 5
+          },
+          {
+            "source": "relationship_status.nameshe",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 5
+          },
+          {
+            "source": "relationship_status.namethey",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 5
+          },
+          {
+            "source": "network_connection_issues.class_name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 30
+          },
+          {
+            "source": "memory_fact_v3.text",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 38
+          },
+          {
+            "source": "memory_category.name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 15
+          },
+          {
+            "source": "memory_category.type",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "memory_category.possible_replacements",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 0
+          },
+          {
+            "source": "bot_voices.voice_sample_url",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 58
+          },
+          {
+            "source": "bot_voices.name",
+            "questions_frequency": 0.0,
+            "exclamations_frequency": 0.0,
+            "capital_usage": 106
+          }
+        ]
+      },
+      "timeline_events": [
+        {
+          "date": "2025-05-14",
+          "type": "behavioral_change",
+          "description": "Activity increase by 488.7%"
+        },
+        {
+          "date": "2025-08-12",
+          "type": "behavioral_change",
+          "description": "Activity increase by 177.4%"
+        }
+      ],
+      "attachment_patterns": {
+        "attachment_style": "insufficient_data",
+        "intimacy_level": 0,
+        "dependency_indicators": 0,
+        "emotional_investment": "low"
+      }
+    },
+    "behavioral_assessment": {
+      "communication_analysis": {
+        "style": {},
+        "frequency": {
+          "peak_hour": 15,
+          "peak_day": 2,
+          "daily_average": 4.25
+        },
+        "emotional_expression": {
+          "dominant_emotion": "positive",
+          "emotional_volatility": 0.054551439986395674,
+          "expression_intensity": 0.07690869963002053
+        },
+        "language_complexity": 0.1406300714182175
+      },
+      "usage_patterns": {
+        "activity_rhythm": {},
+        "consistency": 0,
+        "peak_periods": [],
+        "behavioral_changes": []
+      },
+      "engagement_level": {
+        "overall_engagement": "moderate",
+        "dependency_indicators": "moderate",
+        "emotional_investment": "low"
+      }
+    },
+    "psychological_profile": {
       "emotional_state": "neutral",
       "social_needs": [],
       "coping_mechanisms": [],
       "attachment_indicators": [],
       "risk_indicators": []
     },
-    "relationship_dynamics": {
-      "attachment_style": "insufficient_data",
-      "intimacy_level": 0,
-      "dependency_level": 0,
-      "emotional_investment": "low",
-      "relationship_progression": "unknown"
-    },
-    "temporal_behavior": {
-      "chronotype": "night_owl",
-      "activity_regularity": 0.753958890481597,
-      "usage_consistency": 0,
-      "peak_activity_periods": [],
-      "behavioral_changes": []
-    },
-    "risk_factors": {
+    "risk_evaluation": {
       "overall_risk_level": "low",
       "identified_risks": [],
       "concerning_patterns": [],
@@ -5240,7 +6104,39 @@
         "Continue monitoring for changes in usage patterns"
       ]
     },
-    "investigation_insights": {
+    "technical_analysis": {
+      "database_analysis": {
+        "structure": {
+          "database_size": 0,
+          "record_count": 576,
+          "table_structure": 52,
+          "modification_time": "",
+          "app_confidence": 0.0
+        },
+        "app_identification": {
+          "detected_app": "unknown",
+          "confidence": 0.0,
+          "indicators": [
+            "user_profile"
+          ]
+        },
+        "data_integrity": {
+          "data_completeness": 1.0,
+          "evidence_quality": "High",
+          "temporal_coverage": "Unknown timespan",
+          "source_reliability": "High"
+        }
+      },
+      "analysis_metadata": {
+        "profile_generated": "2025-09-09T14:04:37.384419",
+        "database_source": "REPLIKA_DB",
+        "app_identified": "unknown",
+        "confidence_level": 0.0,
+        "analysis_completeness": 1.0,
+        "data_quality_score": 0.2967143906156362
+      }
+    },
+    "investigative_recommendations": {
       "key_findings": [
         "Detected 2 significant behavioral changes"
       ],
@@ -5273,7 +6169,7 @@
     }
   },
   "metadata": {
-    "generated_at": "2025-09-09T13:23:59.825446",
+    "generated_at": "2025-09-09T14:04:37.396566",
     "version": "1.0"
   }
 }
